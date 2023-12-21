@@ -131,11 +131,6 @@ class HomeSeekerActivity : AppCompatActivity() {
             startActivity(Intent(this, ListWorkerActivity::class.java))
         }
 
-        binding.recommendedWorkersRecyclerView.setOnClickListener{
-            val intent = Intent(this, DetailWorkerActivity::class.java)
-            startActivity(intent)
-        }
-
         binding.relatedPostsRecyclerView.setOnClickListener{
             startActivity(Intent(this, DetailPostActivity::class.java))
         }

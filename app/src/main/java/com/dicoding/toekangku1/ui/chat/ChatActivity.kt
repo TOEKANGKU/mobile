@@ -15,7 +15,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 class ChatActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityChatBinding
-    private val loginViewModel: ChatActivityViewModel by viewModels { ViewModelFactory.getInstance(this) }
+    private val chatViewModel: ChatActivityViewModel by viewModels { ViewModelFactory.getInstance(this) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

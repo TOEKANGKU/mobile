@@ -24,14 +24,16 @@ class ListWorkerActivity : AppCompatActivity() {
     }
 
     private fun setupUser(){
-        val workers = UserData.users.filter { it.type == "Pekerja" }
-
         // Filter the users list for workers of type "Pekerja"
         val workerRecommendations = UserData.users.filter { it.type == "Pekerja" }
 
         // Create and set the adapter for the RecyclerView
         val adapter = WorkerAdapter(workerRecommendations)
         binding.rvListworker.adapter = adapter
+    }
+
+    private fun setupAction(){
+
     }
 
 
